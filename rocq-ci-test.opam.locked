@@ -11,7 +11,7 @@ homepage: "https://github.com/tchajed/rocq-ci-test"
 bug-reports: "https://github.com/tchajed/rocq-ci-test/issues"
 depends: [
   "coq" {= "9.0.1"}
-  "rocq-stdpp" {= "dev.2025-08-02.5.2d5412f4"}
+  "rocq-stdpp" {= "dev.2025-10-19.1.a8665fa3"}
 ]
 build: [make "-j%{jobs}%"]
 install: [make "install"]
