@@ -25,7 +25,7 @@ jobs:
           path: "_opam"
           key: ${{ runner.os }}-modules-${{ hashFiles('*.opam') }}
       - run: |
-          opam install . --deps-only --with-test
+          opam install . --deps-only --locked
       - name: Rocq build
         run: |
           eval $(opam env)
