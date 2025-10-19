@@ -23,8 +23,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: "_opam"
-          key: ${{ runner.os }}-modules-${{ hashFiles('*.opam') }}
-      - run: |
+          key: opam-${{ runner.os }}-${{ hashFiles('*.opam.locked') }}
+      - name: Build opam dependencies
+        run: |
           opam install . --deps-only --locked
       - name: Rocq build
         run: |
