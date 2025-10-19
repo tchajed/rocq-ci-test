@@ -10,28 +10,8 @@ tags: ["category:Miscellaneous" "logpath:ci_test1"]
 homepage: "https://github.com/tchajed/rocq-ci-test"
 bug-reports: "https://github.com/tchajed/rocq-ci-test/issues"
 depends: [
-  "base-bigarray" {= "base"}
-  "base-domains" {= "base"}
-  "base-nnp" {= "base"}
-  "base-threads" {= "base"}
-  "base-unix" {= "base"}
-  "conf-gmp" {= "5"}
-  "conf-pkg-config" {= "4"}
   "coq" {= "9.0.1"}
-  "coq-core" {= "9.0.1"}
-  "coq-stdlib" {= "9.0.0"}
-  "coqide-server" {= "9.0.1"}
-  "dune" {= "3.20.2"}
-  "ocaml" {= "5.2.0"}
-  "ocaml-config" {= "3"}
-  "ocaml-option-flambda" {= "1"}
-  "ocaml-variants" {= "5.2.0+options"}
-  "ocamlfind" {= "1.9.8"}
-  "rocq-core" {= "9.0.1"}
-  "rocq-runtime" {= "9.0.1"}
-  "rocq-stdlib" {= "9.0.0"}
-  "rocq-stdpp" {= "dev.2025-10-19.1.a8665fa3"}
-  "zarith" {= "1.14"}
+  "rocq-stdpp" {= "dev.2025-08-02.5.2d5412f4"}
 ]
 build: [make "-j%{jobs}%"]
 install: [make "install"]
