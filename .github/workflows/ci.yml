@@ -15,7 +15,11 @@ jobs:
         with:
           ocaml-compiler: "4.14.x"
           dune-cache: true
-
+      - name: Cache opam
+        uses: actions/cache@v4
+        with:
+          path: "_opam"
+          key: ${{ runner.os }}-modules-${{ hashFiles('*.opam') }}
       - run: opam install . --deps-only --with-test
       - name: Rocq build
         run: |
