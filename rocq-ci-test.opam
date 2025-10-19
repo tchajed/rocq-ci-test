@@ -1,0 +1,30 @@
+opam-version: "2.0"
+maintainer: "tchajed@gmail.com"
+version: "dev"
+
+homepage: "https://github.com/tchajed/rocq-ci-test"
+dev-repo: "git+https://github.com/tchajed/rocq-ci-test.git"
+bug-reports: "https://github.com/tchajed/rocq-ci-test/issues"
+license: "MIT"
+
+synopsis: "Test Rocq CI"
+description: """
+Just a test repo
+"""
+
+depends: [
+  "coq" {>= "9.0"}
+]
+
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+
+tags: [
+  "category:Miscellaneous"
+  "logpath:ci_test1"
+]
+
+authors: [
+  "Tej Chajed"
+]
+
