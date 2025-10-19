@@ -13,7 +13,8 @@ Just a test repo
 """
 
 depends: [
-  "coq" {>= "9.0"}
+  "rocq-core" {>= "9.0"}
+  "rocq-stdlib"
   "rocq-stdpp"
 ]
 
