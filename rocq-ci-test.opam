@@ -14,7 +14,7 @@ Just a test repo
 
 depends: [
   "coq" {>= "9.0"}
-  "stdpp" {= "dev"}
+  "rocq-stdpp" {= "dev.2025-08-29.0.1e510a89"}
 ]
 
 build: [make "-j%{jobs}%"]
