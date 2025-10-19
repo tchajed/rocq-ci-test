@@ -15,6 +15,7 @@ jobs:
         with:
           ocaml-compiler: "4.14.x"
           dune-cache: true
+          opam-disable-sandboxing: true
       - name: Cache opam
         uses: actions/cache@v4
         with:
