@@ -16,6 +16,9 @@ jobs:
           ocaml-compiler: "4.14.x"
           dune-cache: true
           opam-disable-sandboxing: true
+          opam-repositories: |
+            default: https://github.com/ocaml/opam-repository.git
+            iris-dev: https://gitlab.mpi-sws.org/iris/opam.git
       - name: Cache opam
         uses: actions/cache@v4
         with:
