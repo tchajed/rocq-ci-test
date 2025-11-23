@@ -10,11 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Install system OCaml
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ocaml
-      - name: Set up opam
+      - name: Install OCaml
         uses: ocaml/setup-ocaml@v3
         with:
           ocaml-compiler: "4.14.x"
