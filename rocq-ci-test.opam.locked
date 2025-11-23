@@ -10,9 +10,9 @@ tags: ["category:Miscellaneous" "logpath:ci_test1"]
 homepage: "https://github.com/tchajed/rocq-ci-test"
 bug-reports: "https://github.com/tchajed/rocq-ci-test/issues"
 depends: [
-  "rocq-core" {= "9.0.1"}
+  "rocq-core" {= "9.1.0"}
   "rocq-stdlib" {= "9.0.0"}
-  "rocq-stdpp" {= "dev.2025-10-19.1.a8665fa3"}
+  "rocq-stdpp" {= "dev.2025-11-20.0.187909f0"}
 ]
 build: [make "-j%{jobs}%"]
 install: [make "install"]
